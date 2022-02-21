@@ -98,4 +98,7 @@ let num9 = 10;
 ++num9;
 alert(num9);
 
+let num10 = 10;
+num10++;
+alert(num10);
 
