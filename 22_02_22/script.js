@@ -29,22 +29,17 @@ if (a <= 1 && b >=3) {
     */
 
 let time = 45;
-if(time > 0 && time <= 14){
+if(time >= 0 && time <= 14){
     alert('первая четверть');
-}
-if( time >= 15 && time <= 29){
+} else if( time >= 15 && time <= 29){
     alert('вторая четверть');
-}
-if( time >= 30 && time <= 44){
+} else if( time >= 30 && time <= 44){
     alert('третья четверть');
-}
-if(time >=45 && time <= 59){
+} else if(time >=45 && time <= 59){
     alert('четвертая четверть');
-}
-else if( time < 0){
+} else if( time < 0){
     alert("Значение не попадает в диапазон от 0 до 59");
-}
-else if(time >= 59){
+} else if(time >= 59){
     alert("Значение не попадает в диапазон от 0 до 59")
 }
 console.log(time);
