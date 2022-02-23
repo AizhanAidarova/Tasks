@@ -29,7 +29,7 @@ if (a <= 1 && b >=3) {
     */
 
 let time = 45;
-if(time >= 0 && time <= 14){
+if(time >=  0 && time <= 14){
     alert('первая четверть');
 } else if( time >= 15 && time <= 29){
     alert('вторая четверть');
