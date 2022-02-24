@@ -24,7 +24,7 @@ console.log(result);
 3) Дан массив ['a', 'b', 'c']. Добавьте ему в конец элементы 1, 2, 3.*/
 
 
-let number = ['a','b','c']
+let number = ['a','b','c'];
 number.push(1,2,3);
 console.log(number);
 
