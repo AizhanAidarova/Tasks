@@ -20,15 +20,14 @@ let object = {
     b:6,
     c:10
 }
-let result = (object.a + object.b + object.c);
-console.log(result);
+console.log(object.a + object.b + object.c);
 
 
 /*****Сделайте рефакторинг кода, с помощью тернарного оператора.*******/
 
-let number = true;
-let access = number === true ? 3 : 5;
-alert(access);
+let data = true;
+let number = data === true ? 3 : 5;
+alert(number);
 
 /******* Сделать alert В.В.Путин *******/
 
