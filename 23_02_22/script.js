@@ -5,9 +5,9 @@
 Выведите на экран зарплату Ella, Sophia *******/
 
 let userSalaries = {
-    Ella: '50 тыс.',
-    Sophia:'40 тыс.',
-    Ellie:'70 тыс.'
+    Ella: 50000,
+    Sophia:40000,
+    Ellie:70000
 }
 console.log(` ${userSalaries.Ella}, ${userSalaries.Sophia} `);
 
