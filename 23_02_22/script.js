@@ -5,12 +5,11 @@
 Выведите на экран зарплату Ella, Sophia *******/
 
 let userSalaries = {
-    'Ella': '50 тыс.',
-    'Sophia':'40 тыс.',
-    'Ellie':'70 тыс.'
+    Ella: '50 тыс.',
+    Sophia:'40 тыс.',
+    Ellie:'70 тыс.'
 }
-console.log(userSalaries['Ella']);
-console.log(userSalaries['Sophia']);
+console.log(` ${userSalaries.Ella}, ${userSalaries.Sophia} `);
 
 /******Создайте объект с ключами a, b и c значениями 5 , 6 и 10.Найдите сумму его элементов ********/
 
