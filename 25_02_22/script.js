@@ -4,13 +4,13 @@ if (name === 'Admin'){
     if(password === 'Lord'){
         alert('С возвращением!');
     }else if(password == null){
-        alert('Вы нажали отмена');
+        alert('Упс,случайно нажал отмену');
     }else{
-        alert('Неверный пароль');
+        alert('Кто-то забыл пароль');
     }
 }
 else if (name == null){
-    alert('Вы нажали отмена');
+    alert('Упс,случайно нажал отмену');
 }else{
     alert('Что за незнакомый аккаунт?');
 }
