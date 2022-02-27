@@ -8,8 +8,7 @@ if (name === 'Admin'){
     }else{
         alert('Кто-то забыл пароль');
     }
-}
-else if (name == null){
+}else if (name == null){
     alert('Упс,случайно нажал отмену');
 }else{
     alert('Что за незнакомый аккаунт?');
