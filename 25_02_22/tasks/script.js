@@ -46,6 +46,7 @@ for( b = 0; b < allSumm.length; b++){
     total += allSumm[b];
 }
 console.log(total);
+
 /*let count = [1,2,3,4,5,6,7,8,9,10];
 let summa = 0;
 for (let a = 0; a < count.length; a++){
