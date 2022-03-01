@@ -51,6 +51,7 @@ function example(massiv1) {
          let summ = massiv1[a] + massiv1[a];
         massiv.push(summ);
     }
+    return massiv
 }
 example([1, 2, 3]);
 example([4,1,1,1,4]);
