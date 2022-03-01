@@ -26,7 +26,7 @@ name (например, «Василий») и выводить строку (в
 
 
 
-function getName () {
+/*function getName () {
     let name = prompt ('Имя')
     if( name === '' ){
         alert ('Привет, гость');
@@ -35,7 +35,24 @@ function getName () {
     }
     return
 }
-getName();
+getName();*/
+
+
+
+function getName(name='гость'){
+    console.log(`Привет ${name}`);
+}
+const name = 'Василий';
+getName(name);
+//если в getName ничего не указали,то будет "Привет,нрсть"...если указали name,то будет "Привет Василий"
+
+
+
+
+
+
+
+
 
 
 /************* На старте вы получаете массив. Необходимо написать функцию, которая будет
