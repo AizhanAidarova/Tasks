@@ -33,6 +33,7 @@ function getName () {
     }else {
         alert ('Привет, ' + name );
     }
+    return
 }
 getName();
 
