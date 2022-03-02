@@ -14,6 +14,8 @@ let obj1 = {
 console.log(obj1);
 console.log(sum);
 
+/**** Reduce ****/
+
 let result2 = massiv.reduce((sum,value) => {
     return sum * value;
 },1)
