@@ -31,11 +31,11 @@ console.log(result2);
     Например: myFunc('a', 3)   // ['a', 'a', 'a'] ******/
 
 
-const fN = ( size,value) => {
+const fN = (value,size) => {
     return new Array(size).fill(value);
 };
 
-console.log(fN(3, 'a'));
+console.log(fN('a', 3));
 
 /****** Напишите функцию, которая разворачивает массив в обратном порядке
 и затем ее возвращает.  Функция наша  принимает массив любых элементов.
