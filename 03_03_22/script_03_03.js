@@ -23,18 +23,10 @@ setTimeout(fN,8000, 'Hello after 8 seconds','');
 /******* Напишите функцию mul(n,m), которая принимает два аргумента и возвращает
 произведение этих аргументов. ******/
 
-
-// let mul1 = (n,m) => n * m;{
-//     console.log(2 * 2);
-// }
-
-function  mul() {
-    const n = arguments[0];
-    const m = arguments[1];
-    console.log(n*m);
+function  mul(n,m) {
+    return (n * m);
 }
-mul(2,3);
-
+console.log(mul(2,3));
 
 /********** Создайте функцию и с помощью цикла найдите факториал числа 7:
 Название для функции можно дать любую.
