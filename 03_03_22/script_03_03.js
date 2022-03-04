@@ -36,14 +36,14 @@ console.log(mul(2,3));
     factorial(7); //1*2*3*4*5*6*7 //5040 *******/
 
 function fun(g) {
-    let num = 1;
+    let sum = 1;
     for( i =1;i <= g; i++){
-        num *= i;
+        sum *= i;
     }
-    return num;
+    return sum;
 }
-let num = fun(7);
-console.log(num);
+let result = fun(7);
+console.log(result);
 
 
 
