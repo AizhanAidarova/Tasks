@@ -7,12 +7,11 @@
 let button_start = document.getElementById('btn-start');
 let button_result = document.getElementById('btn-result');
 let prm;
-let res;
-res = 0;
+let res = 0;
 let fN = () => {
     prm = prompt('Введите число');
     while (prm != 99) {
-        res += 1;
+        res ++;
         prm = prompt('Введите число');
     }return res
 }
