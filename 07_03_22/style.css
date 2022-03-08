@@ -1,0 +1,20 @@
+
+.notification{
+    height: 50px;
+    width: 250px;
+    display: flex;
+    background-color: #2b8b80;
+    border-radius: 5px;
+    padding-left: 20px;
+    position: fixed;
+    right: 0;
+    top: 14px;
+    align-items: center;
+    margin: 15px;
+    color: #d6e3e3;
+
+}
+.welcome {
+    background: #995cb1!important;
+    color: #00ff73;
+}
