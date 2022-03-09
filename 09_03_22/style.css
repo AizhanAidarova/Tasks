@@ -1,0 +1,28 @@
+.btn-info{
+    padding: 10px 15px;
+    background-color: cadetblue;
+    font-size: 15px;
+    border-radius: 8px;
+    border: none;
+}
+
+.btn-info:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.notification{
+    position: relative;
+    top: -45px;
+    padding: 16px 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    display: none;
+    color: #084298;
+    background-color: #cfe2ff;
+    border-color: #b6d4fe;
+}
+
+.block{
+    display: block!important;
+}
