@@ -1,4 +1,4 @@
-let btn = document.querySelector('#open-modal');
+/*let btn = document.querySelector('#open-modal');
 let modal = document.querySelector('#modal');
 
 const showNotification = (settings) =>{
@@ -20,7 +20,7 @@ btn.addEventListener('click',() => {
 });
 const hideNotification = () =>{
     modal.classList.remove('block');
-}
+}*/
 /********* Grey **********/
 /*const changeStyle = () => {
     modal.style.backgroundColor = '#e2e3e5';
@@ -106,3 +106,34 @@ btn.addEventListener('click',() => {
     changeStyle();
     showNotification({html: 'A simple dark alert—check it out!', className: 'welcome'});
 });*/
+
+let btn = document.querySelector('#open-modal');
+let btn2 = document.querySelector('#open-modal2');
+let btn3 = document.querySelector('#open-modal3');
+let btn4 = document.querySelector('#open-modal4');
+let modal = document.querySelector('#modal');
+
+const showNotification = (options) => {
+    console.log();
+    modal.textContent = options.html;
+    modal.classList.add (options.className);
+    modal.classList.add('d-block');
+    setTimeout(hideNotification,4000,options.className);
+}
+const hideNotification = (className) => {
+    modal.classList.remove('d-block');
+    modal.classList.remove(className);
+}
+
+btn3.addEventListener('click', () => {
+    showNotification({html:'Good morning',className:'alert-primery'});
+})
+btn.addEventListener('click', () => {
+    showNotification({html:'Good morning',className:'alert-secondary'});
+})
+btn2.addEventListener('click', () => {
+    showNotification({html:'Good morning',className:'alert-success'});
+})
+btn4.addEventListener('click', () => {
+    showNotification({html:'Good morning',className:'alert-danger'});
+})
