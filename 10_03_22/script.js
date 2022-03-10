@@ -1,4 +1,4 @@
-let start1 = document.getElementById('btn-start');
+let start = document.getElementById('btn-start');
 let stop = document.getElementById('btn-stop');
 let restart = document.getElementById('btn-restart');
 let result = document.getElementById('result');
@@ -6,14 +6,14 @@ let result = document.getElementById('result');
 let intervalId;
 let count = 0;
 
-function start(){
+function startFn(){
     intervalId = setInterval(function () {
         result.textContent = count;
         count++
     },1000)
 }
 
-start1.onclick = start;
+start.onclick = startFn;
 
 stop.onclick = () =>{
     clearInterval(intervalId)
