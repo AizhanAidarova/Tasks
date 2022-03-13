@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="name">
+    <h2>Анкета для корпоративных клиентов</h2>
+    <p>Личные данные</p>
+    <input id="user-lastName" class="input2" type="text" placeholder="Фамилия">
+    <input id="user-name" class="input" type="text" placeholder="Имя">
+    <input id="user-patronymic" class="input" type="text" placeholder="Отчество">
+    <div class="passport">
+        <p class="pass-p">Паспортные данные</p>
+        <div class="date">
+            <input id="user-date" class="calendar" type="date" >
+            <input id="user-address" class="home" type="text" placeholder="Место проживания по прописке">
+        </div>
+            <div class="date">
+                <input id="user-serialNumber" class="input1" type="text" placeholder="Серийный номер AN/AD">
+                <input id="user-inn" class="input1" type="text" placeholder="ИНН">
+                <input id="user-dateOfReceipt" class="calendar address" type="date">
+            </div>
+            <div class="date">
+                <input id="user-contactNumber" class="input1" type="text" placeholder="Контактный номер">
+                <input id="user-mail" class="input1" type="text" placeholder="Электронный адрес">
+                <input id="user-nameOfBank" class="input1" type="text" placeholder="Наименование банка">
+            </div>
+            <input id="user-factAddress" class="place" type="text" placeholder="Фактическое место проживания">
+        <div>
+            <button id="button"><a href="#">Далее</a></button>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+body{
+    background-color: black;
+}
+.name{
+    padding-top: 20px;
+    background-color: white;
+    margin: 0 auto;
+    width: 682px;
+    height: 615px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+h2,p {
+    text-align: left;
+    padding-left: 20px;
+    color: black;
+}
+p{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.pass-p{
+    padding-left: 0;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+input{
+    width: 190px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 5px;
+    padding-left: 10px;
+    border: 1px solid #DADADA;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+}
+input::-webkit-input-placeholder {
+    color: #DADADA;
+}
+.pers-info{
+}
+.lastname{
+    margin-left: 20px;
+}
+.firstname{
+    margin-right:20px ;
+}
+.passport{
+    text-align: left;
+    padding-left: 20px;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    color: #DADADA;
+}
+.input1{
+    margin-top: 22px;
+}
+.input{
+    width: 190px;
+    margin-top: 22px;
+}
+.input2{
+    width: 190px;
+    margin-top: 22px;
+}
+.home{
+    border-radius: 10px;
+    width: 402px;
+    height: 50px;
+}
+.place{
+    margin-top: 22px;
+    width: 403px;
+    text-align: left;
+}
+button{
+    margin-top: 45px;
+    margin-left: 75px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    width: 500px;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.date{
+    display: flex;
+}
+.calendar{
+    display: flex;
+    width: 203px;
+    height: 52px;
+    text-align: center;
+    border: 1px solid #DADADA;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 5px;
+}
+.date1{
+    margin-top: 22px;
+}
+
+.address{
+    margin-top: 22px;
+}
