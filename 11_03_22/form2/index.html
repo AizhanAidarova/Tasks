@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main2">
+    <div class="info">
+        <div class="money-info">
+            <h2>Данные о ваших доходах</h2>
+            <input id="company" class="company" type="text" placeholder="Наименование организации">
+            <input id="position" class="input" type="text" placeholder="Должность">
+            <input id="earn" class="earn" type="text" placeholder="Заработная плата в месяц">
+            <input id="earn3Month" class="earn" type="text" placeholder="Заработная плата за последние 3 месяца">
+        </div>
+    </div>
+    <div class="credite">
+        <p>Сведения о кредите</p>
+        <input id="thing"  class="cell" type="text" placeholder="Покупка телефона(наименование товара)">
+        <input id="price" type="text" placeholder="Стоимость товара">
+        <input id="amount" type="text" placeholder="Количество товара">
+        <input id="total" type="text" placeholder="Итого сумма кредита">
+        <select id="credit" name="credit">
+            <option hidden disabled selected value> Кредит/рассрочка</option>
+            <option class="value1" >Кредит</option>
+            <option class="value2">Рассрочка</option>
+        </select>
+        <select id="credit3m">
+            <option hidden selected value> мин 3 месяца</option>
+            <option class="value1">3 месяца</option>
+            <option class="value2">6 месяцев</option>
+            <option class="value3">9 месяцев</option>
+            <option class="value4">12 месяцев</option>
+        </select>
+        <select id="address" class="address">
+            <option hidden disabled selected value>Точка получения товара</option>
+            <optgroup label="ТЦ «Азия Молл»" class="optgroup">
+                <option class="color-choose" value="2"> пр. Айтматова, 3, ТЦ «Asia Mall», этаж 0</option>
+            </optgroup>
+            <optgroup label="ТЦ ГУМ «Чынар»" class="optgroup">
+                <option class="color-choose" value="2">  пр.Чуй 92, ТРК ГУМ «Чынар», этаж -1 , бутик M9 (северная сторона)</option>
+            </optgroup>
+            <optgroup label="ТЦ «Beta Stores - 2»" class="optgroup">
+                <option class="color-choose" value="2"> ул. Юнусалиева 177/2,торговый центр «Beta Stores - 2»</option>
+            </optgroup>
+            <optgroup label="ТЦ Vefa Center" class="optgroup">
+                <option class="color-choose" value="2"> ул. Горького 27/1,"Vefa Center",1 этаж. Бутик № 20</option>
+            </optgroup>
+            <optgroup label="ТЦ «Беш-Сары Сити» " class="optgroup">
+                <option class="color-choose" value="2"> Бейшеналиева 42А, ТЦ «Беш-Сары Сити»</option>
+            </optgroup>
+            <optgroup label="ТРЦ «Аламедин Гранд»" class="optgroup">
+                <option class="color-choose" value="2">  пр. Жибек Жолу, 150 ТРЦ «Аламедин Гранд», 1 этаж, Бутик №1 (вход с ул. Алма-Атинская)</option>
+            </optgroup>
+        </select>
+
+    </div>
+    <div>
+        <button id="button">Оформить заявку</button>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
