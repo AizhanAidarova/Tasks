@@ -17,8 +17,8 @@ button.onclick = (event) =>{
     let object2 = {
         name:company,
         position:position,
-        salary:earn,
-        salaryFor3Month:earn3Month,
+        earn:earn,
+        earn3Month:earn3Month,
         thing:thing,
         price:price,
         amount:amount,
