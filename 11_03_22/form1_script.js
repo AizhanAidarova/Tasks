@@ -15,20 +15,6 @@ button.onclick = () => {
     let userFactAddress = document.querySelector('#user-factAddress').value;
     let notific = document.querySelector('#noti');
 
-
-    const showNotification = (options) => {
-        setTimeout(hideNotification,2000);
-        notific.classList.add('d-block');
-        notific.style.width = '500px';
-        notific.style.borderColor = '#darkblue';
-        notific.textContent = 'Введите обязательные поля!';
-
-    }
-
-    const hideNotification = () => {
-        notific.classList.remove('d-block');
-    }
-
     let object = {
         lastname: userlastName,
         name: userName,
@@ -44,7 +30,16 @@ button.onclick = () => {
         factAddress: userFactAddress
     }
     console.log(object)
-
+    const showNotification = (options) => {
+        setTimeout(hideNotification,2000);
+        notific.classList.add('d-block');
+        notific.style.width = '500px';
+        notific.style.borderColor = '#darkblue';
+        notific.textContent = 'Введите обязательные поля!';
+    }
+    const hideNotification = () => {
+        notific.classList.remove('d-block');
+    }
     if (userlastName == '' || userName == '' || userSerialNumber == ''|| userInn =='' || userDateOfReceipt == ''){
         showNotification()
     }else {
