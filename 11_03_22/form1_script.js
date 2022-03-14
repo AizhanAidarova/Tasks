@@ -1,6 +1,6 @@
 let button = document.querySelector('#button');
 
-button.onclick = (event) => {
+button.onclick = () => {
     let userlastName = document.querySelector('#user-lastName').value;
     let userName = document.querySelector('#user-lastName').value;
     let userPatronymic = document.querySelector('#user-patronymic').value;
@@ -13,7 +13,21 @@ button.onclick = (event) => {
     let userMail = document.querySelector('#user-mail').value;
     let userNameOfBank = document.querySelector('#user-nameOfBank').value;
     let userFactAddress = document.querySelector('#user-factAddress').value;
+    let notific = document.querySelector('#noti');
 
+
+    const showNotification = (options) => {
+        setTimeout(hideNotification,2000);
+        notific.classList.add('d-block');
+        notific.style.width = '500px';
+        notific.style.borderColor = '#darkblue';
+        notific.textContent = 'Введите обязательные поля!';
+
+    }
+
+    const hideNotification = () => {
+        notific.classList.remove('d-block');
+    }
 
     let object = {
         lastname: userlastName,
@@ -30,5 +44,11 @@ button.onclick = (event) => {
         factAddress: userFactAddress
     }
     console.log(object)
+
+    if (userlastName == '' || userName == '' || userSerialNumber == ''|| userInn =='' || userDateOfReceipt == ''){
+        showNotification()
+    }else {
+        window.location.href = 'form2.html';
+    }
 
 }
