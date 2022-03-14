@@ -1,7 +1,6 @@
 let button = document.querySelector('#button');
 
-button.onclick = (event) =>{
-    event.preventDefault()
+button.onclick = () =>{
     let company = document.querySelector('#company').value;
     let position = document.querySelector('#position').value;
     let earn = document.querySelector('#earn').value;
@@ -13,6 +12,7 @@ button.onclick = (event) =>{
     let credit = document.querySelector('#credit').value;
     let credit3m = document.querySelector('#credit3m').value;
     let address = document.querySelector('#address').value;
+    let notific = document.querySelector('#noti');
 
     let object2 = {
         name:company,
@@ -27,7 +27,21 @@ button.onclick = (event) =>{
         credit3m:credit3m,
         address:address
     }
-    console.log(object2);
+    const showNotification = () => {
+        setTimeout(hideNotification,2000);
+        notific.classList.add('d-block');
+        notific.style.width = '500px';
+        notific.style.borderColor = '#darkblue';
+        notific.textContent = 'Введите обязательные поля!';
 
+    }
+
+    const hideNotification = () => {
+        notific.classList.remove('d-block');
+    }
+    console.log(object2);
+    if (company == '' || position == '' || earn == ''|| earn3Month ==''){
+        showNotification()
+    }
 
 }
