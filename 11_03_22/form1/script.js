@@ -1,7 +1,6 @@
 let button = document.querySelector('#button');
 
 button.onclick = (event) => {
-    event.preventDefault();
     let userlastName = document.querySelector('#user-lastName').value;
     let userName = document.querySelector('#user-lastName').value;
     let userPatronymic = document.querySelector('#user-patronymic').value;
