@@ -33,9 +33,7 @@ button.onclick = () =>{
         notific.style.width = '500px';
         notific.style.borderColor = '#darkblue';
         notific.textContent = 'Введите обязательные поля!';
-
     }
-
     const hideNotification = () => {
         notific.classList.remove('d-block');
     }
