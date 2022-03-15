@@ -43,6 +43,7 @@ button.onclick = () => {
     if (userlastName == '' || userName == '' || userSerialNumber == ''|| userInn =='' || userDateOfReceipt == ''){
         showNotification()
     }else {
+        console.log(object);
         window.location.href = 'form2.html';
     }
 
