@@ -37,9 +37,12 @@ button.onclick = () =>{
     const hideNotification = () => {
         notific.classList.remove('d-block');
     }
-    console.log(object2);
+    console.log(object2.value);
     if (company == '' || position == '' || earn == ''|| earn3Month ==''){
         showNotification()
+    }else{
+        console.log(object2);
+        window.localStorage.setItem('object2',JSON.stringify(object2));
     }
 
 }

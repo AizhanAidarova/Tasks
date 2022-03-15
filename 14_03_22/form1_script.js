@@ -1,6 +1,7 @@
 let button = document.querySelector('#button');
 
-button.onclick = () => {
+button.onclick = (event) => {
+    event.preventDefault();
     let userlastName = document.querySelector('#user-lastName').value;
     let userName = document.querySelector('#user-lastName').value;
     let userPatronymic = document.querySelector('#user-patronymic').value;
@@ -30,7 +31,7 @@ button.onclick = () => {
         factAddress: userFactAddress
     }
     console.log(object)
-    const showNotification = (options) => {
+    const showNotification = (option) =>{
         setTimeout(hideNotification,2000);
         notific.classList.add('d-block');
         notific.style.width = '500px';
@@ -41,10 +42,12 @@ button.onclick = () => {
         notific.classList.remove('d-block');
     }
     if (userlastName == '' || userName == '' || userSerialNumber == ''|| userInn =='' || userDateOfReceipt == ''){
-        showNotification()
+        showNotification();
     }else {
         console.log(object);
+        window.localStorage.setItem('object',JSON.stringify(object));
         window.location.href = 'form2.html';
     }
+
 
 }
