@@ -27,11 +27,10 @@ button.onclick = (event) =>{
         notific.classList.remove('d-block');
     }
 
-    if (company == '' || position == '' || earn == ''|| earn3Month ==''){
+    if (company === '' || position === '' || earn === ''|| earn3Month ===''){
         showNotification()
     }else{
-        /*console.log(object2);
-        window.localStorage.setItem('object2',JSON.stringify(object2));*/
+       /* window.localStorage.setItem('object2',JSON.stringify(object2));*/
     }
     let object2 = {
         form2:{
@@ -51,6 +50,8 @@ button.onclick = (event) =>{
             name: JSON.parse(localStorage.getItem('data'))
         }
     }
+
     console.log(object2);
+    window.localStorage.setItem('object2',JSON.stringify(object2))
 
 }
