@@ -1,22 +1,21 @@
 let button = document.querySelector('#button');
 
 button.onclick = (event) => {
-    event.preventDefault();
-    let userlastName = document.querySelector('#user-lastName').value;
-    let userName = document.querySelector('#user-lastName').value;
-    let userPatronymic = document.querySelector('#user-patronymic').value;
-    let userDate = document.querySelector('#user-date').value;
-    let userAddress = document.querySelector('#user-address').value;
-    let userSerialNumber = document.querySelector('#user-serialNumber').value;
-    let userInn = document.querySelector('#user-inn').value;
-    let userDateOfReceipt = document.querySelector('#user-dateOfReceipt').value;
-    let userContactNumber = document.querySelector('#user-contactNumber').value;
-    let userMail = document.querySelector('#user-mail').value;
-    let userNameOfBank = document.querySelector('#user-nameOfBank').value;
-    let userFactAddress = document.querySelector('#user-factAddress').value;
+    let userLastName = document.querySelector('#user-lastName');
+    let userName = document.querySelector('#user-lastName');
+    let userPatronymic = document.querySelector('#user-patronymic');
+    let userDate = document.querySelector('#user-date');
+    let userAddress = document.querySelector('#user-address');
+    let userSerialNumber = document.querySelector('#user-serialNumber');
+    let userInn = document.querySelector('#user-inn');
+    let userDateOfReceipt = document.querySelector('#user-dateOfReceipt');
+    let userContactNumber = document.querySelector('#user-contactNumber');
+    let userMail = document.querySelector('#user-mail');
+    let userNameOfBank = document.querySelector('#user-nameOfBank');
+    let userFactAddress = document.querySelector('#user-factAddress');
     let notific = document.querySelector('#noti');
 
-    let object = {
+   /* let object = {
         lastname: userlastName,
         name: userName,
         patronymic: userPatronymic,
@@ -29,8 +28,8 @@ button.onclick = (event) => {
         mail: userMail,
         banks: userNameOfBank,
         factAddress: userFactAddress
-    }
-    console.log(object)
+    }*/
+
     const showNotification = (option) =>{
         setTimeout(hideNotification,2000);
         notific.classList.add('d-block');
@@ -41,13 +40,29 @@ button.onclick = (event) => {
     const hideNotification = () => {
         notific.classList.remove('d-block');
     }
-    if (userlastName == '' || userName == '' || userSerialNumber == ''|| userInn =='' || userDateOfReceipt == ''){
-        showNotification();
+    if (userLastName === '' || userName === '' || userSerialNumber === ''|| userInn === '' || userDateOfReceipt === ''){
+       return showNotification();
     }else {
-        console.log(object);
-        window.localStorage.setItem('object',JSON.stringify(object));
+        /*console.log(obj);
+        window.localStorage.setItem('object',JSON.stringify(object));*/
         window.location.href = 'form2.html';
     }
 
+    let obj = {
+        lastName: userLastName.value,
+        name: userName.value,
+        patronymic: userPatronymic.value,
+        date: userDate.value,
+        address: userAddress.value,
+        serialNumber: userSerialNumber.value,
+        inn: userInn.value,
+        dateOfReceipt: userDateOfReceipt.value,
+        contactNumber: userContactNumber.value,
+        mail: userMail.value,
+        banks: userNameOfBank.value,
+        factAddress: userFactAddress.value,
+    }
 
+    console.log(obj);
+    let object2= localStorage.setItem("data", JSON.stringify(obj));
 }

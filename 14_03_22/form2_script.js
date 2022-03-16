@@ -1,32 +1,21 @@
 let button = document.querySelector('#button');
 
-button.onclick = () =>{
-    let company = document.querySelector('#company').value;
-    let position = document.querySelector('#position').value;
-    let earn = document.querySelector('#earn').value;
-    let earn3Month = document.querySelector('#earn3Month').value;
-    let thing = document.querySelector('#thing').value;
-    let price = document.querySelector('#price').value;
-    let amount = document.querySelector('#amount').value;
-    let total = document.querySelector('#total').value;
-    let credit = document.querySelector('#credit').value;
-    let credit3m = document.querySelector('#credit3m').value;
-    let address = document.querySelector('#address').value;
+button.onclick = (event) =>{
+
+    let company = document.querySelector('#company');
+    let position = document.querySelector('#position');
+    let earn = document.querySelector('#earn');
+    let earn3Month = document.querySelector('#earn3Month');
+    let thing = document.querySelector('#thing');
+    let price = document.querySelector('#price');
+    let amount = document.querySelector('#amount');
+    let total = document.querySelector('#total');
+    let credit = document.querySelector('#credit');
+    let credit3m = document.querySelector('#credit3m');
+    let address = document.querySelector('#address');
     let notific = document.querySelector('#noti');
 
-    let object2 = {
-        name:company,
-        position:position,
-        earn:earn,
-        earn3Month:earn3Month,
-        thing:thing,
-        price:price,
-        amount:amount,
-        total:total,
-        credit:credit,
-        credit3m:credit3m,
-        address:address
-    }
+
     const showNotification = () => {
         setTimeout(hideNotification,2000);
         notific.classList.add('d-block');
@@ -37,12 +26,31 @@ button.onclick = () =>{
     const hideNotification = () => {
         notific.classList.remove('d-block');
     }
-    console.log(object2.value);
+
     if (company == '' || position == '' || earn == ''|| earn3Month ==''){
         showNotification()
     }else{
-        console.log(object2);
-        window.localStorage.setItem('object2',JSON.stringify(object2));
+        /*console.log(object2);
+        window.localStorage.setItem('object2',JSON.stringify(object2));*/
     }
+    let object2 = {
+        form2:{
+            name:company.value,
+            position:position.value,
+            earn:earn.value,
+            earn3Month:earn3Month.value,
+            thing:thing.value,
+            price:price.value,
+            amount:amount.value,
+            total:total.value,
+            credit:credit.value,
+            credit3m:credit3m.value,
+            address:address.value,
+        },
+        form1:{
+            name: JSON.parse(localStorage.getItem('data'))
+        }
+    }
+    console.log(object2);
 
 }
